@@ -1,0 +1,27 @@
+.header{
+
+}
+.header .navbar{
+    padding: 0.1rem 0;
+}
+.header .logo{
+    font-size: 28px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #313131;
+}
+.header .nav-link{
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+}
+.common-btn{
+    color: black;
+    border: 2px solid #b29466;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.common-btn:hover {
+    background-color: #b29466;
+    color: white;
+}
