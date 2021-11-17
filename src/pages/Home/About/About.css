@@ -1,0 +1,28 @@
+.about{
+    padding: 90px 0;
+}
+.about h5{
+    font-size: 20px;
+    font-family: monospace;
+    letter-spacing: 2px;
+    color: #454545;
+}
+.about h2{
+    font-family: auto;
+    font-size: 56px;
+    margin: 15px 0 20px;
+}
+.about p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #646464;
+    margin-bottom: 28px;
+}
+.about button{
+    padding: 10px 30px;
+    border-radius: 0;
+}
+.about img{
+    width: 85%;
+    border-radius: 50%;
+}
