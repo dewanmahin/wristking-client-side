@@ -1,0 +1,10 @@
+.register{
+    padding: 90px 0;
+    border-top: 1px solid #00000014;
+}
+.register img{
+    width: 100%;
+}
+.register .form-area{
+    height: 445px;
+}

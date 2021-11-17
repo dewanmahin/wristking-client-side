@@ -1,37 +1,44 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import './Header.css'
 
 const Header = () => {
+    const {user, logOut} = useAuth();
+
     return (
         <div className="header">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
+            <nav className="navbar navbar-expand-lg">
+                <div className="container">
                     {/* Logo Area */}
                     <Link className="navbar-brand logo" to='/'>Wrist<span style={{color: '#b29466', fontSize: '43px', fontFamily: 'auto'}}>K</span>ing</Link>
                     {/* Hamburger Button */}
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                     </button>
                     {/* Nav Links */}
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
                                 <NavLink className="nav-link" to='/Home' activeStyle={{color: "#b29466"}}>Home</NavLink>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <NavLink className="nav-link" to='/products' activeStyle={{color: "#b29466"}}>Products</NavLink>
                             </li>
-                            <li class="nav-item">
-                                <NavLink className="nav-link" to='/dashboard' activeStyle={{color: "#b29466"}}>Dashboard</NavLink>
-                            </li>
-                            <li class="nav-item">
-                            {/* <a class="nav-link disabled">Disabled</a> */}
-                            </li>
+                            {
+                                !user?.email ? <span style={{display: "none"}}></span> :
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to='/dashboard' activeStyle={{color: "#b29466"}}>Dashboard</NavLink>
+                                </li>
+                            }
                         </ul>
-                        <Link to="/login">
-                            <button className="btn common-btn">Login</button>
-                        </Link>
+                        {
+                            user?.email ? 
+                            <button onClick={logOut} className="btn common-btn">Logout</button> :
+                            <Link to="/login">
+                                <button className="btn common-btn">Login</button>
+                            </Link>
+                        }
                     </div>
                 </div>
             </nav>
