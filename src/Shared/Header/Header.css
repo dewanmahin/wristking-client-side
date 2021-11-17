@@ -1,10 +1,10 @@
-.header{
+/* .header{
 
-}
+} */
 .header .navbar{
     padding: 0.1rem 0;
 }
-.header .logo{
+.logo{
     font-size: 28px;
     font-weight: 800;
     font-family: sans-serif;

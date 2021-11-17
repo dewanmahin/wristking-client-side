@@ -1,0 +1,25 @@
+.footer1{
+    background: #191919;
+    color: white;
+    padding: 50px 0;
+}
+.footer1 p{
+    font-size: 26px;
+    font-family: auto;
+    letter-spacing: 1px;
+}
+.footer .logo{
+    color: white;
+}
+.footer2{
+    padding: 22px 0;
+}
+.footer2 p{
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 500;
+}
+.footer2 p a{
+    text-decoration: none;
+    color: black;
+}
