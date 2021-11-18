@@ -1,0 +1,36 @@
+.homeProduct{
+    margin: auto;
+}
+.homeProduct .card{
+    border: 0;
+}
+.homeProduct .card img{
+    border-radius: 10px;
+}
+.homeProduct .card .card-body{
+    text-align: left;
+    margin-top: 12px;
+    box-shadow: 0px 3px 20px 2px #00000012;
+    border-radius: 10px;
+}
+.homeProduct .card h3{
+    font-family: auto;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    color: #B29466;
+}
+.homeProduct .card p{
+    font-weight: 500;
+    color: #454545;
+}
+.homeProduct .card-end p{
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 600;
+    color: #B29466;
+}
+.homeProduct .common-btn{
+
+}
