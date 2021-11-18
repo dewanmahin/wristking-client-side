@@ -5,7 +5,9 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import Error404 from './pages/Error404/Error404';
 import Home from './pages/Home/Home/Home';
 import Login from './pages/Login/Login/Login';
+import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
 import Register from './pages/Login/Register/Register';
+import OrderDetails from './pages/OrderDetails/OrderDetails';
 import Products from './pages/Products/Products';
 import Footer from './Shared/Footer/Footer';
 import Header from './Shared/Header/Header';
@@ -46,6 +48,11 @@ function App() {
                 <Register></Register>
               <Footer></Footer> 
             </Route>
+            <PrivateRoute path='/orderDtl/:_id'>
+              <Header></Header>
+                <OrderDetails></OrderDetails>
+              <Footer></Footer>
+            </PrivateRoute>
             <Route path="*">
               <Error404></Error404>
             </Route>

@@ -1,0 +1,43 @@
+.product{
+    padding: 2px 5px;
+    background-color: #191919;
+    border-radius: 8px;
+    color: white;
+}
+.product img{
+    border-right: 2px dashed #B29466;
+}
+@media screen and (max-width: 540px) {
+    .product img{
+        border-bottom: 2px dashed #B29466;
+        border-right: 0px;
+    }
+}
+.products-card{
+    text-align: left;
+    padding-left: 30px;
+
+}
+.products-card h3{
+    font-size: 32px;
+    font-family: auto;
+    color: #B29466;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.products-card p{
+    color: #eaeaea;
+    font-weight: 500;
+}
+.products-card .card-end p{
+    font-family: cursive;
+    font-weight: 700;
+    font-size: 20px;
+    color: #dea751;
+}
+.products-card .common-btn{
+    color: white;
+}
+.products-card .common-btn:hover{
+    color: black;
+}
