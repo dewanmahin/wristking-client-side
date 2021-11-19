@@ -6,7 +6,6 @@ const AddProduct = () => {
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = data => {
-        console.log(data)
         fetch(`http://localhost:5000/addProduct`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},

@@ -17,7 +17,7 @@ const OrderDetails = () => {
 
     const onSubmit = data => {
         data.singleItem = singleDtl;
-        console.log(data)
+        // console.log(data)
             fetch('http://localhost:5000/orders', {
                 method: 'POST',
                 headers: {'content-Type': 'application/json'},

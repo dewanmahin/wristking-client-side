@@ -1,0 +1,10 @@
+.review{
+    padding: 80px 0;
+}
+.review .title{
+    font-family: auto;
+    font-size: 55px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: #B29466;
+}

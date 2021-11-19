@@ -11,6 +11,9 @@
 .footer .logo{
     color: white;
 }
+.footer .logo:hover {
+    color: white;
+}
 .footer2{
     padding: 22px 0;
 }
