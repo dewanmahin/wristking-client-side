@@ -16,7 +16,7 @@ import './Dashboard.css'
 
 const Dashboard = () => {
     let { path, url } = useRouteMatch();
-    const {user} = useAuth();
+    const {user, logOut} = useAuth();
 
     return (
         <div className="dashboard">
@@ -44,6 +44,7 @@ const Dashboard = () => {
                     <NavLink style={{textDecoration: 'none'}} activeStyle={{color: "#b29466"}} to={`${url}/makeAdmin`}>
                         <span>Make Admin</span>
                     </NavLink>
+                    <button onClick={logOut} className="btn common-btn">Logout</button>
                 </div>
                 <div className="col-lg-10 col-12 p-0 nested-area">
                     <Switch>
