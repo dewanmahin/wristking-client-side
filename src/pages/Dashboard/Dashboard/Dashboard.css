@@ -5,6 +5,12 @@
     background: #091931;
     padding: 50px 45px;
 }
+.nester-nav h4{
+    color: #e2ba7c;
+    font-size: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+}
 .nester-nav a{
     border-bottom: 2px solid #b2946638;
     margin-bottom: 26px;
@@ -18,6 +24,3 @@
     font-family: sans-serif;
     font-weight: 600;
 }
-/* .nested-area{
-
-} */

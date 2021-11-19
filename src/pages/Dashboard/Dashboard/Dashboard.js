@@ -1,6 +1,9 @@
+import { faUserAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Route, Switch, useRouteMatch } from 'react-router';
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import AddProduct from '../AddProduct/AddProduct';
 import DashboardHome from '../DashboardHome/DashboardHome';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
@@ -13,11 +16,13 @@ import './Dashboard.css'
 
 const Dashboard = () => {
     let { path, url } = useRouteMatch();
+    const {user} = useAuth();
 
     return (
         <div className="dashboard">
             <div className="row w-100 m-0">
                 <div className="col-lg-2 col-12 nester-nav d-flex text-start flex-column">
+                    <h4><FontAwesomeIcon className="me-2" icon={faUserAlt}/>{user?.displayName}</h4>
                     <NavLink style={{textDecoration: 'none'}} activeStyle={{color: "#b29466"}} to={`${url}/pay`}>
                         <span>Pay</span>
                     </NavLink>
