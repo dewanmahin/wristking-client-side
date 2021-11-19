@@ -13,7 +13,7 @@ const AddProduct = () => {
         })
             .then(res => res.json())
             .then(data => {
-                alert("Package added successfully");
+                alert("Product added successfully");
                 reset();
             })
     };
