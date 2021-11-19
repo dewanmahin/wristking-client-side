@@ -1,0 +1,23 @@
+.dashboard{
+    border-top: 1px solid #00000014;
+}
+.nester-nav{
+    background: #091931;
+    padding: 50px 45px;
+}
+.nester-nav a{
+    border-bottom: 2px solid #b2946638;
+    margin-bottom: 26px;
+    border-left: 0;
+    border-right: 0;
+    padding: 9px 0;
+    color: white;
+}
+.nester-nav a span{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+/* .nested-area{
+
+} */
