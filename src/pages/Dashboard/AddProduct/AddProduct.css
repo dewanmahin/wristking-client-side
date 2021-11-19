@@ -1,0 +1,10 @@
+.addProduct{
+    padding: 80px 0;
+}
+.addProduct .title{
+    font-family: auto;
+    font-size: 55px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: #B29466;
+}

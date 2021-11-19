@@ -39,7 +39,7 @@ const Dashboard = () => {
                         <span>Manage Products</span>
                     </NavLink>
                     <NavLink style={{textDecoration: 'none'}} activeStyle={{color: "#b29466"}} to={`${url}/addProduct`}>
-                        <span>Add Products</span>
+                        <span>Add Product</span>
                     </NavLink>
                     <NavLink style={{textDecoration: 'none'}} activeStyle={{color: "#b29466"}} to={`${url}/makeAdmin`}>
                         <span>Make Admin</span>
