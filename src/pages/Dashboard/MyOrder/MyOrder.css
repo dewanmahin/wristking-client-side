@@ -1,0 +1,19 @@
+.myOrder{
+    background: white;
+    box-shadow: 0px 4px 15px 2px #0000000f;
+    border-radius: 10px;
+    padding: 16px 5px 16px 0 ;
+}
+.myOrder img{
+    width: 120px;
+    border-radius: 50% !important;
+}
+.myOrders-card h1{
+    font-weight: 700;
+    font-size: 32px;
+}
+.myOrders-card p{
+    font-size: 26px;
+    font-family: cursive;
+    font-weight: 600;
+}
