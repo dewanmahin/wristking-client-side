@@ -1,0 +1,10 @@
+.makeAdmin{
+    padding: 80px;
+}
+.makeAdmin .title{
+    font-family: auto;
+    font-size: 55px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: #B29466;
+}

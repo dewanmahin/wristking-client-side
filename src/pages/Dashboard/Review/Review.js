@@ -10,7 +10,7 @@ const Review = () => {
 
     const onSubmit = data => {
         data.userName = user?.displayName
-        fetch(`http://localhost:5000/reviews`, {
+        fetch(`https://lit-thicket-61306.herokuapp.com/reviews`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(data)

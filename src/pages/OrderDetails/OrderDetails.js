@@ -18,7 +18,7 @@ const OrderDetails = () => {
     const onSubmit = data => {
         data.singleItem = singleDtl;
         // console.log(data)
-            fetch('http://localhost:5000/orders', {
+            fetch('https://lit-thicket-61306.herokuapp.com/orders', {
                 method: 'POST',
                 headers: {'content-Type': 'application/json'},
                 body: JSON.stringify(data),
@@ -32,7 +32,7 @@ const OrderDetails = () => {
     };
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://lit-thicket-61306.herokuapp.com/products')
             .then(res => res.json())
             .then(data => SetOrderDetails(data))
     }, [])

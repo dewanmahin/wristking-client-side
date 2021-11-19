@@ -9,6 +9,7 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [authError, setAuthError] = useState('');
     const [isLoading, setIsLoading] = useState(false);
+    const [admin, setAdmin] = useState(false);
 
     const auth = getAuth();
 
@@ -20,6 +21,8 @@ const useFirebase = () => {
                 setAuthError('');
                 const newUser = {email, displayName: name};
                 setUser(newUser);
+                // save user to the database
+                saveUser(email, name, 'POST');
                 // send name to firebase after creation
                 updateProfile(auth.currentUser, {
                     displayName: name
@@ -51,7 +54,14 @@ const useFirebase = () => {
             })
             .finally(() => setIsLoading(false));
     }
-    
+
+    // load admin
+    useEffect(() => {
+        fetch(`https://lit-thicket-61306.herokuapp.com/users/${user.email}`)
+            .then(res => res.json())
+            .then(data => setAdmin(data.admin))
+    }, [user.email])
+
     // User state management
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -75,8 +85,21 @@ const useFirebase = () => {
             })
     }
 
+    // Send user info to database
+    const saveUser = (email, displayName, method) => {
+        const user = {email, displayName};
+        fetch('https://lit-thicket-61306.herokuapp.com/users', {
+            method: method,
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+    }
+
     return{
         user,
+        admin,
         registerUser,
         loginUser,
         logOut,
