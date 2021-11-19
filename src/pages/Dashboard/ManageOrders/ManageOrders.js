@@ -24,8 +24,8 @@ const ManageOrders = () => {
                 .then(data => {
                     if(data.deletedCount > 0){
                         alert('deleted successfully');
-                        const remainingBookings = manageOrders.filter(restBookings => restBookings._id !== id);
-                        setManageOrders(remainingBookings);
+                        const remainingOrders = manageOrders.filter(restOrders => restOrders._id !== id);
+                        setManageOrders(remainingOrders);
                     }
                 })
         }

@@ -1,0 +1,23 @@
+.manageProduct{
+    
+}
+.manageProduct .card{
+    border-radius: 10px;
+}
+.manageProduct .card img{
+    border-radius: 10px 10px 0 0 ;
+}
+.manageProduct h3{
+    font-size: 30px;
+    font-family: auto;
+    font-weight: 700;
+    color: #B29466;
+}
+.manageProduct p{
+    font-weight: 500;
+}
+.manageProduct .card-end p{
+    font-size: 24px;
+    font-family: cursive;
+    font-weight: 600;
+}

@@ -29,8 +29,8 @@ const MyOrders = () => {
                 .then(data => {
                     if(data.deletedCount > 0){
                         alert('deleted successfully');
-                        const remainingBookings = myOrders.filter(restBookings => restBookings._id !== id);
-                        setMyOrders(remainingBookings);
+                        const remainingOrders = myOrders.filter(restOrders => restOrders._id !== id);
+                        setMyOrders(remainingOrders);
                     }
                 })
         }
