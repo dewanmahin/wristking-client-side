@@ -5,3 +5,10 @@
     background: linear-gradient(
 38deg, #2d271e, #B29466);
 }
+.divider1{
+    width: 100%;
+    margin: auto;
+    height: 3px;
+    background: linear-gradient(
+272deg, #2d271e, #B29466);
+}
